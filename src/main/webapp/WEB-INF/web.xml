@@ -20,4 +20,36 @@
         <servlet-name>form</servlet-name>
         <url-pattern>/RegisterServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>requestDispatch</servlet-name>
+        <servlet-class>com.tutorial.servlet.servlet.RequestDispatcher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requestDispatch</servlet-name>
+        <url-pattern>/requestDispatch</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <servlet-class>com.example.cookie.HomePage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/cookieHome</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>secondPage</servlet-name>
+        <servlet-class>com.example.cookie.Welcome</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>secondPage</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>cookiePage</servlet-name>
+        <servlet-class>com.example.cookie.CookiePage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cookiePage</servlet-name>
+        <url-pattern>/CookiePage</url-pattern>
+    </servlet-mapping>
 </web-app>
