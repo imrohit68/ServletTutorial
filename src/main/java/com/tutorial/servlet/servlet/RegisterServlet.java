@@ -1,5 +1,7 @@
 package com.tutorial.servlet.servlet;
 
+import com.example.registration.Student;
+import com.example.registration.StudentDB;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,14 +16,13 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        out.println("<h1> this is registration from</h1>");
+        out.println("<h1>Your form with : </h1>");
 
-        String name = req.getParameter("user_name");
-        String phone = req.getParameter("phone_number");
-        String city = req.getParameter("user_city");
-
-       out.println(name);
-       out.println(phone);
-       out.println(city);
+        Student s1 = new Student(req.getParameter("user_name"),req.getParameter("phone_number"),req.getParameter("user_city"));
+        StudentDB.insertData(s1);
+        out.println("<h1> Name : "+s1.getStudentName());
+        out.println("Phone : "+s1.getStudentPhone());
+        out.println("City: "+s1.getGetStudentCity());
+        out.println("has been registred</h1>");
     }
 }
