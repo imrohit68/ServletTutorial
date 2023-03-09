@@ -52,4 +52,28 @@
         <servlet-name>cookiePage</servlet-name>
         <url-pattern>/CookiePage</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>urlrewirttingHome</servlet-name>
+        <servlet-class>com.example.urlRewirtting.HomePageUrlRewritting</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>urlrewirttingHome</servlet-name>
+        <url-pattern>/urlHome</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>urlHomeSecond</servlet-name>
+        <servlet-class>com.example.urlRewirtting.UrlRewrittingServletTwo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>urlHomeSecond</servlet-name>
+        <url-pattern>/UrlRewrittingServletTwo</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>urlSession</servlet-name>
+        <servlet-class>com.example.urlRewirtting.urlSession</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>urlSession</servlet-name>
+        <url-pattern>/urlSession</url-pattern>
+    </servlet-mapping>
 </web-app>
