@@ -76,4 +76,28 @@
         <servlet-name>urlSession</servlet-name>
         <url-pattern>/urlSession</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>HffHome</servlet-name>
+        <servlet-class>com.example.HiddenFormField.HiddenFormFieldHome</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HffHome</servlet-name>
+        <url-pattern>/HffHome</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>HffSecond</servlet-name>
+        <servlet-class>com.example.HiddenFormField.HiddenFormFieldSecond</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HffSecond</servlet-name>
+        <url-pattern>/HiddenFormSecond</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>HffThird</servlet-name>
+        <servlet-class>com.example.HiddenFormField.HiddenFormFieldThird</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HffThird</servlet-name>
+        <url-pattern>/HiddenFormFieldThird</url-pattern>
+    </servlet-mapping>
 </web-app>
