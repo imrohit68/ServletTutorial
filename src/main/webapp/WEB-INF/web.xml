@@ -100,4 +100,28 @@
         <servlet-name>HffThird</servlet-name>
         <url-pattern>/HiddenFormFieldThird</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>SignUP</servlet-name>
+        <servlet-class>com.example.Filter.SignUpPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUP</servlet-name>
+        <url-pattern>/SignUp</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogIn</servlet-name>
+        <servlet-class>com.example.Filter.LoginPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogIn</servlet-name>
+        <url-pattern>/LogIn</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>authen</filter-name>
+        <filter-class>com.example.Filter.Filter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>authen</filter-name>
+        <url-pattern>/LogIn</url-pattern>
+    </filter-mapping>
 </web-app>
